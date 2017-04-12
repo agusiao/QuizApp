@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agusiao.apps.quizapp.OpenQuestionActivity">
+
+    <TextView
+        android:id="@+id/OQ_TV_Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/MARGIN_STD"
+        android:text="@string/q1_question" />
+
+    <EditText
+        android:id="@+id/OQ_ET_Answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginRight="@dimen/MARGIN_STD"
+        android:layout_marginLeft="@dimen/MARGIN_STD"
+        android:text="" />
+
+    <Button
+        android:id="@+id/OQ_BTN_OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/MARGIN_STD"
+        android:text="@string/ok" />
+</LinearLayout>

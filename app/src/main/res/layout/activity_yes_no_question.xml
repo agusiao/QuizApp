@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agusiao.apps.quizapp.YesNoQuestionActivity">
+
+    <TextView
+        android:id="@+id/YNA_TV_Question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/MARGIN_STD"
+        android:layout_marginRight="@dimen/MARGIN_STD"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        android:text="@string/q2_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/YNA_BTN_Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/MARGIN_STD"
+        android:layout_marginRight="@dimen/MARGIN_STD"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        android:text="@string/yes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/YNA_BTN_No"
+        app:layout_constraintTop_toBottomOf="@+id/YNA_TV_Question" />
+
+    <Button
+        android:id="@+id/YNA_BTN_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/MARGIN_STD"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        android:text="@string/no"
+        app:layout_constraintLeft_toRightOf="@+id/YNA_BTN_Yes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YNA_TV_Question" />
+</android.support.constraint.ConstraintLayout>

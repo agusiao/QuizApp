@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="MARGIN_FAB">16dp</dimen>
+
+    <dimen name="MARGIN_STD">8dp</dimen>
+    <dimen name="MARGIN_LIST_HORIZONTAL">4dp</dimen>
+    <dimen name="MARGIN_LIST_VERTICAL">2dp</dimen>
+
+    <dimen name="TEXT_SIZE_BIG">18sp</dimen>
+    <dimen name="TEXT_SIZE_NORMAL">14sp</dimen>
+</resources>

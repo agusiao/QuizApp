@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agusiao.apps.quizapp.MainActivity">
+
+    <TextView
+        android:id="@+id/QL_LBL_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/MARGIN_STD"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        android:text="@string/score"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/QL_TV_Score"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/QL_TV_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        android:text="20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/QL_LBL_Score"
+        app:layout_constraintLeft_toRightOf="@+id/QL_LBL_Score"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineVL" />
+
+    <TextView
+        android:id="@+id/QL_LBL_BestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="@dimen/MARGIN_STD"
+        android:text="@string/best_score"
+        app:layout_constraintBaseline_toBaselineOf="@+id/QL_TV_BestScore"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVL"
+        app:layout_constraintRight_toLeftOf="@+id/QL_TV_BestScore" />
+
+    <TextView
+        android:id="@+id/QL_TV_BestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        android:text="20"
+        app:layout_constraintLeft_toRightOf="@+id/QL_LBL_BestScore"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/QL_RV_QuestionList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/MARGIN_STD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QL_LBL_Score"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
+
